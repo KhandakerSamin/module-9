@@ -96,6 +96,7 @@ main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
+  /* margin-left: 80px; */
 }
 
 .feature-content {
@@ -130,8 +131,100 @@ main {
   padding-bottom: 32px; */
 }
 
+/* feature section end */
+
+/* ftr section start */
 
 
+
+/* ftr section end */
+
+/* fact section start */
+/* .facts{
+  margin-left: 100px;
+} */
+
+.facts-title {
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+
+.facts-description {
+  color: #727272;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 100px;
+}
+
+.facts-card-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.facts-card-container .card {
+  border-radius: 8px;
+  border: 1px solid #FF900E;
+  text-align: center;
+  padding: 30px;
+
+}
+
+.facts-card-container .card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.facts-card-container .card-stats {
+  font-size: 2.8rem;
+  color: #424242;
+  margin-top: 10px;
+  margin-bottom: 10px
+}
+
+.sponsors-title {
+  color: #131313;
+  font-weight: 700;
+  font-size: 2.8rem;
+  text-align: center;
+  margin-top: 180px;
+}
+
+.sponsors-description {
+  color: #727272;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.sponsors-img-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  align-items: center;
+}
+
+.sponsors-img-container img {
+  width: 165px;
+  height: 50px;
+}
+
+/* 
+footer{
+  border-radius: 8px;
+  background: #FFF4E7;
+  padding: 10px;
+  text-align: center;
+  margin: 0 100px;
+
+}
+.foter-description{
+  font-size: 20px;
+  font-weight: 400;
+  color: #424242;
+} */
 
 /* responsive media query */
 /* mobile divices */
@@ -140,18 +233,25 @@ main {
     padding: 20px;
   }
 
-  nav , .feature-conteiner {
+  nav,
+  .feature-conteiner,
+  .facts-card-container,
+  .sponsors-img-container {
     flex-direction: column;
   }
-  .feature-img-container{
-    grid-template-columns:1fr;
+
+  .feature-img-container {
+    grid-template-columns: 1fr;
   }
-  .feature-content {
+
+  .feature-content .facts-card-container {
     padding-right: 20px;
     padding-left: 20px;
-    padding-bottom: 20px;
   }
-  
+
+  .facts-card-container {
+    gap: 20px;
+  }
 }
 
 /* medium devices */
@@ -160,10 +260,9 @@ main {
     padding: 50px;
   }
 
-  nav  {
+  nav,
+  .sponsors-img-container,
+  .feature-conteiner {
     flex-direction: column;
-  }
-  .feature-conteiner{
-    flex-direction: column-reverse;
   }
 }
