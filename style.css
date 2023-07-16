@@ -52,6 +52,7 @@ nav li a {
   text-decoration: none;
   color: #424242;
 }
+
 /* banner styles */
 .banner-content {
   max-width: 860px;
@@ -69,9 +70,29 @@ nav li a {
   color: #727272;
   text-align: center;
 }
-.banner-img{
+
+.banner-img {
   margin-top: 20px;
   width: 100%;
 }
-/* header section ended */
 
+/* header section ended */
+/* responsive media query */
+/* mobile divices */
+@media screen and (max-width:576px) {
+  header{
+    padding: 20px;
+  }  
+  nav{
+    flex-direction: column;
+  }
+}
+/* medium devices */
+@media screen and (min-width:576px) and (max-width:960px) {
+ header{
+  padding:50px;
+ }
+  nav{
+    flex-direction: column;
+  }
+}
